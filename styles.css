@@ -1,16 +1,21 @@
 .navbar-brand img {
-    font-family: 'Montserrat', sans-serif;
-
-    /* Adjust the margin as needed */
+    font-family: "Montserrat", sans-serif;
+    width: 26px;
+    /* default size for phone */
 }
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+@media (min-width: 768px) {
+    .navbar-brand img {
+        width: 56px;
+        /* size for desktop */
+    }
+}
+
+
+/* Adjust the margin as needed */
+
+
+/* In your custom CSS file */
+.font-custom {
     font-family: 'Montserrat', sans-serif;
 }
