@@ -1,5 +1,16 @@
 .navbar-brand img {
-    margin-right: 05px;
-    
+    font-family: 'Montserrat', sans-serif;
+
     /* Adjust the margin as needed */
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Montserrat', sans-serif;
 }
