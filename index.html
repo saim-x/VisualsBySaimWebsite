@@ -25,6 +25,8 @@
             rel="stylesheet">
         <!--Tailwind CSS Inclusion-->
         <script src="https://cdn.tailwindcss.com"></script>
+        <!--JS FILE INCLUSION-->
+        <script src="/script.js"></script>
     </head>
     <body>
         <!-- <header>
@@ -124,24 +126,27 @@
                 class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
             <nav
                 class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-                <div class="flex items-center mb-8">
-                    <a href="#" class="text-3xl font-bold leading-none flex items-center">
+                <div class="flex items-center justify-between mb-8">
+                    <a href="#"
+                        class="text-3xl font-bold leading-none flex items-center">
                         <div>
-                            <img src="/media/logo circular.png" alt="logo" width="36px">
+                            <img src="/media/logo circular.png" alt="logo"
+                                width="36px">
                         </div>
                     </a>
-                    
-                    <button class="navbar-close">
+
+                    <button class="navbar-close ml-4">
                         <svg
                             class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
                             xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="2"
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2"
                                 d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
                 </div>
+
                 <div>
                     <ul>
                         <li class="mb-1">
@@ -171,7 +176,7 @@
                     <div class="pt-6">
                         <a
                             class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none bg-gray-50 hover:bg-gray-100 rounded-xl"
-                            href="#">Sign in</a>
+                            href="#contact-section">Get A Quote</a>
 
                         <a
                             class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-red-600 hover:bg-red-700 rounded-xl"
@@ -179,7 +184,7 @@
 
                     </div>
                     <p class="my-4 text-xs text-center text-gray-400">
-                        <span>Copyright © 2021</span>
+                        <span>Copyright © 2024</span>
                     </p>
                 </div>
             </nav>
@@ -321,7 +326,8 @@ document.addEventListener('DOMContentLoaded', function() {
         </section>
 
         <!--Pricing-->
-        <section id="pricing-section" class="bg-white-100 py-12 mb-22 pricing-section">
+        <section id="pricing-section"
+            class="bg-white-100 py-12 mb-12 pricing-section">
             <div class="mx-auto max-w-xl text-center mb-8">
                 <h1 class="text-3xl font-extrabold sm:text-5xl">
                     Thumbnails
@@ -386,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="mt-8">
-                        <button
+                        <button onclick="scrollToContact()"
                             class="bg-gray-400 hover:bg-gray-500 px-3 py-2 rounded-lg w-full text-white">
                             Get Now
                         </button>
@@ -448,7 +454,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="mt-8">
-                        <button
+                        <button onclick="scrollToContact()"
                             class="bg-gray-400 hover:bg-gray-500 px-3 py-2 rounded-lg w-full text-white">
                             Get Now
                         </button>
@@ -457,16 +463,20 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </section>
         <!--CONTACT-->
-        <section id="contact-section" class="bg-white-100 py-12 mb-24 contact-section   ">
+        <section id="contact-section"
+            class="bg-white-100 py-12 mb-24 contact-section   ">
             <div class="mx-auto max-w-4xl px-4 ">
-                <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mx-auto border border-red-300 rounded-md">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-1 gap-6 mx-auto border border-red-300 rounded-md">
                     <!-- Contact Form -->
-                    <form action="https://api.web3forms.com/submit" method="POST"
+                    <form action="https://api.web3forms.com/submit"
+                        method="POST"
                         class="bg-white shadow-md rounded-lg p-8 md:col-span-1">
                         <div class="mx-auto max-w-xl text-center mb-8">
                             <h1 class="text-3xl font-extrabold sm:text-5xl">
                                 Contact
-                                <strong class="font-extrabold text-red-700 sm:block">
+                                <strong
+                                    class="font-extrabold text-red-700 sm:block">
                                     Now
                                 </strong>
                             </h1>
@@ -476,7 +486,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <input type="text" name="name" placeholder="Your Name"
                             class="contact-inputs mt-4 px-4 py-2 block w-full border border-gray-300 rounded-md"
                             required>
-                        <input type="email" name="email" placeholder="Your Email"
+                        <input type="email" name="email"
+                            placeholder="Your Email"
                             class="contact-inputs mt-4 px-4 py-2 block w-full border border-gray-300 rounded-md"
                             required>
                         <textarea name="message" placeholder="Your Message"
@@ -484,33 +495,39 @@ document.addEventListener('DOMContentLoaded', function() {
                             required></textarea>
                         <button type="submit"
                             class="mt-4 px-6 py-3 bg-gray-800 text-white font-semibold rounded-md hover:bg-gray-700 transition duration-300">Submit
-                            <img src="/media/arrow_icon.png" alt class="inline-block w-4 ml-2"></button>
+                            <img src="/media/arrow_icon.png" alt
+                                class="inline-block w-4 ml-2"></button>
                     </form>
                 </div>
             </div>
         </section>
-        
+
         <!--Footer-->
         <footer class="bg-white">
-            <div class="max-w-screen-xl px-4 py-8 mx-auto space-y-4 overflow-hidden sm:px-6 lg:px-8 border-t border-gray-200">
+            <div
+                class="max-w-screen-xl px-4 py-8 mx-auto space-y-4 overflow-hidden sm:px-6 lg:px-8 border-t border-gray-200">
                 <nav class="flex flex-wrap justify-center -mx-5 -my-2">
                     <div class="px-5 py-2">
-                        <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        <a href="#"
+                            class="text-base leading-6 text-gray-500 hover:text-gray-900">
                             Home
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#portfolio-section" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        <a href="#portfolio-section"
+                            class="text-base leading-6 text-gray-500 hover:text-gray-900">
                             Portfolio
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#pricing-section" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        <a href="#pricing-section"
+                            class="text-base leading-6 text-gray-500 hover:text-gray-900">
                             Pricing
                         </a>
                     </div>
                     <div class="px-5 py-2">
-                        <a href="#contact-section" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                        <a href="#contact-section"
+                            class="text-base leading-6 text-gray-500 hover:text-gray-900">
                             Contact Us
                         </a>
                     </div>
@@ -518,7 +535,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="flex justify-center mt-8 space-x-6">
                     <a href="#" class="text-gray-400 hover:text-gray-500">
                         <span class="sr-only">Facebook</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-6 h-6" aria-hidden="true"
+                            fill="currentColor" viewBox="0 0 24 24">
                             <!-- Facebook icon SVG -->
                         </svg>
                     </a>
@@ -532,8 +550,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </p>
             </div>
         </footer>
-        
-        
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
