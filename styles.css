@@ -11,13 +11,11 @@
     }
 }
 
-
 /* Adjust the margin as needed */
-
 
 /* In your custom CSS file */
 .font-custom {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -25,9 +23,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.pricing-section{
-    font-family: 'Montserrat', sans-serif;
+.pricing-section {
+    font-family: "Montserrat", sans-serif;
+}
 
-
-    
+#contact-section {
+    font-family: "Montserrat", sans-serif;
 }

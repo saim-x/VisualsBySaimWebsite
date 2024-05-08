@@ -26,7 +26,7 @@
         <!--Tailwind CSS Inclusion-->
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class> //I removed bg blue here
+    <body>
         <!-- <header>
             <nav>
                 <div class="logo">
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </section>
         <!--Portfolio-->
-        <section id="portfolio-section" class="pt-0 mb-48">
+        <section id="portfolio-section" class="pt-0 mb-24">
 
             <!-- Image Gallery -->
             <section
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </section>
 
         <!--Pricing-->
-        <section id="pricing-section" class="bg-gray-100 py-12 pricing-section">
+        <section id="pricing-section" class="bg-white-100 py-12 pricing-section">
             <div class="mx-auto max-w-xl text-center mb-8">
                 <h1 class="text-3xl font-extrabold sm:text-5xl">
                     Thumbnails
@@ -458,6 +458,41 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         </section>
+        <!--CONTACT-->
+        <section id="contact-section" class="bg-white-100 py-12 contact-section">
+            <div class="mx-auto max-w-4xl px-4">
+                <div class="grid grid-cols-1 md:grid-cols-1 gap-6 mx-auto">
+                    <!-- Contact Form -->
+                    <form action="https://api.web3forms.com/submit" method="POST"
+                        class="bg-white shadow-md rounded-lg p-8 md:col-span-1">
+                        <div class="mx-auto max-w-xl text-center mb-8">
+                            <h1 class="text-3xl font-extrabold sm:text-5xl">
+                                Contact
+                                <strong class="font-extrabold text-red-700 sm:block">
+                                    Now
+                                </strong>
+                            </h1>
+                        </div>
+                        <input type="hidden" name="access_key"
+                            value="3abee05d-5550-4330-91e4-124585e7fb59">
+                        <input type="text" name="name" placeholder="Your Name"
+                            class="contact-inputs mt-4 px-4 py-2 block w-full border border-gray-300 rounded-md"
+                            required>
+                        <input type="email" name="email" placeholder="Your Email"
+                            class="contact-inputs mt-4 px-4 py-2 block w-full border border-gray-300 rounded-md"
+                            required>
+                        <textarea name="message" placeholder="Your Message"
+                            class="contact-inputs mt-4 px-4 py-2 block w-full border border-gray-300 rounded-md h-32"
+                            required></textarea>
+                        <button type="submit"
+                            class="mt-4 px-6 py-3 bg-gray-800 text-white font-semibold rounded-md hover:bg-gray-700 transition duration-300">Submit
+                            <img src="/media/arrow_icon.png" alt class="inline-block w-4 ml-2"></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
         
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
