@@ -10,3 +10,6 @@ function scrollToContact() {
         console.error('Contact section not found.');
     }
 }
+new kursor({
+	type: 1
+})
