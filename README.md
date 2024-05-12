@@ -27,13 +27,13 @@ Welcome to the Thumbnail Service Instagram Page Website! This website is designe
 
 ## Installation
 
-No installation is required for this website. Simply visit the live website link to access the content. [WILL BE UPDATED SOON]
+No installation is required for this website. Simply visit the live website link to access the content. [here](https://visualsbysaim.netlify.app/)
 
 ## Usage
 
 To use the website:
 
-1. Visit the live website link [here](#). [COMING SOON]
+1. Visit the live website link [here](https://visualsbysaim.netlify.app/). 
 2. Navigate through the different sections using the menu or scrolling.
 3. Explore the thumbnail gallery to view our designs.
 4. Contact us through the provided form for inquiries and collaboration opportunities.
