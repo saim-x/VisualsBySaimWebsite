@@ -31,3 +31,11 @@ html {
 #contact-section {
     font-family: "Montserrat", sans-serif;
 }
+
+
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+    
+}
