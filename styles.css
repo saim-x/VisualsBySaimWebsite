@@ -34,8 +34,10 @@ html {
 
 
 
-.dark-mode {
+/* Default styles */
+.dark-mode  {
+    /* dark mode styles */
     background-color: #222;
     color: #fff;
-    
+    transition: background-color 0.7s ease-in, color 1s ease-out; /* Smooth transition */
 }
